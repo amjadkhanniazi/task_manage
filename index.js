@@ -4,6 +4,7 @@ import cors  from 'cors';
 import 'dotenv/config';
 import  userRoutes from './routes/auth.js';
 import   taskRoutes from './routes/taskRoutes.js';
+import serverless from 'serverless-http';
 
 const app=express();
 
@@ -19,3 +20,5 @@ app.use('/tasks',taskRoutes);
 app.listen(5000,  () => {
     console.log('server is running on http://localhost:5000');
 })
+
+export const handler = serverless(app);
