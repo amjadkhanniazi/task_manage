@@ -1,3 +1,3 @@
 export default {
-    MongoURL: 'mongodb://localhost:27017/TaskManage'
+    MongoURL: 'mongodb+srv://amjad:myacount13@mongotest.rqx1a.mongodb.net/TaskManage'
 }
