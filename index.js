@@ -17,4 +17,8 @@ connectDB();
 app.use('/user', userRoutes);
 app.use('/tasks',taskRoutes);
 
-export default serverless(app);
+app.listen(5000,  () => {
+    console.log('server is running on http://localhost:5000');
+})
+
+export default app;
