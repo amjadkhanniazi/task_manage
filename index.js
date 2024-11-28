@@ -17,4 +17,4 @@ connectDB();
 app.use('/user', userRoutes);
 app.use('/tasks',taskRoutes);
 
-export const handler = serverless(app);
+export default serverless(app);
